@@ -19,7 +19,11 @@ isBopomofo(hwnd){
     result := SendMessage(
     	WM_IME_CONTROL, IMC_GETCONVERSIONMODE, 0,, DllCall("imm32\ImmGetDefaultIMEWnd", "Uint", hwnd, "Uint")
     )
-    return result == 1
+    if isChineseIME(hwnd){
+        return result == 1
+    } else {
+        return result == 0
+    }
 }
 
 ; send strings in english when IME is under Microsoft Bopomofo 

@@ -1,7 +1,8 @@
 # README
 Autohotkey V2 functions, scripts, and executable files for inproving user experience of Microsoft Bopomofo
 # Features
-- Change what you type in Chinese mode to English characters by identifying key-in strings without bopomofo tone keys.
+- Change what you type in Chinese mode to English characters by identifying key-in strings without bopomofo tone keys. (press `Ctrl` + `Home` to turn on/off this feature.)
+  ![press `Ctrl`+`Home` to turn on/off this feature](./media/auto-zh-to-eng.gif)
 - Remap CapsLock to Down when IME is under Microsoft Bopomofo. This feature reduces the burden of opening word candidate lists, while minimally affecting existing keyboard operations.
 # Environment
 - Autohotkey v2.0.2
