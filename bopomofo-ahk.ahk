@@ -19,10 +19,10 @@ isBopomofo(hwnd){
     result := SendMessage(
     	WM_IME_CONTROL, IMC_GETCONVERSIONMODE, 0,, DllCall("imm32\ImmGetDefaultIMEWnd", "Uint", hwnd, "Uint")
     )
-    if isChineseIME(hwnd){
-        return result == 1
+    if !isChineseIME(hwnd){
+        return 0
     } else {
-        return result == 0
+        return result == 1
     }
 }
 
